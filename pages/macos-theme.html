@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dushyanth Kurra</title>
+    <link rel="stylesheet" href="../css/macos-styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="menu-bar">
+            <div class="menu-left">
+                <span class="apple-logo">🍎</span>
+                <span class="menu-item">Portfolio</span>
+            </div>
+            <div class="menu-right">
+                <span class="time" id="current-time"></span>
+            </div>
+        </div>
+
+        <div class="finder-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <span class="control close"></span>
+                    <span class="control minimize"></span>
+                    <span class="control maximize"></span>
+                </div>
+                <div class="window-title">Portfolio</div>
+                <div class="window-options">
+                    <span class="option" onclick="window.location.href='../index.html'">Open in Terminal</span>
+                </div>
+            </div>
+
+            <div class="window-content">
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <div class="sidebar-item active" data-folder="about">
+                            <span class="folder-icon">📁</span> About Me
+                        </div>
+                        <div class="sidebar-item" data-folder="education">
+                            <span class="folder-icon">🎓</span> Education
+                        </div>
+                        <div class="sidebar-item" data-folder="skills">
+                            <span class="folder-icon">⚡</span> Skills
+                        </div>
+                        <div class="sidebar-item" data-folder="courses">
+                            <span class="folder-icon">📚</span> Courses
+                        </div>
+                        <div class="sidebar-item" data-folder="experience">
+                            <span class="folder-icon">💼</span> Experience
+                        </div>
+                        <div class="sidebar-item" data-folder="projects">
+                            <span class="folder-icon">🚀</span> Projects
+                        </div>
+                        <div class="sidebar-item" data-folder="blogs">
+                            <span class="folder-icon">📝</span> Blogs
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="folder-view" id="about" style="display: block;">
+                        <div class="folder-header">
+                            <h2>📁 About Me</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item">
+                                <div class="file-icon">👤</div>
+                                <div class="file-content">
+                                    <h3>Dushyanth Kurra</h3>
+                                    <p>Software Development Engineer II at Amazon</p>
+                                    <p>Passionate about building scalable systems and solving complex problems</p>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">📧</div>
+                                <div class="file-content">
+                                    <h4>Contact</h4>
+                                    <p>kd13@iitbbs.ac.in</p>
+                                    <p>(+91) 9494777463</p>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🔗</div>
+                                <div class="file-content">
+                                    <h4>Links</h4>
+                                    <p><a href="https://github.com/kDushyanth" target="_blank">GitHub: kDushyanth</a></p>
+                                    <p><a href="https://www.linkedin.com/in/kurra-dushyanth" target="_blank">LinkedIn: Kurra Dushyanth</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-view" id="education">
+                        <div class="folder-header">
+                            <h2>🎓 Education</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item">
+                                <div class="file-icon">🎓</div>
+                                <div class="file-content">
+                                    <h4>B.Tech in Computer Science</h4>
+                                    <p>IIT Bhubaneswar</p>
+                                    <small>2018-2022 | CGPA: 9.52/10.0</small>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">📚</div>
+                                <div class="file-content">
+                                    <h4>Intermediate (12th)</h4>
+                                    <p>Board of Intermediate Education, A.P</p>
+                                    <small>2016-2018 | 98.8%</small>
+                                    <p style="margin-top: 8px; font-size: 12px; color: #666;">
+                                        JEE Advanced: AIR 1744 | JEE Mains: AIR 1840 | AP EAMCET: Rank 276
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🏫</div>
+                                <div class="file-content">
+                                    <h4>Secondary School (10th)</h4>
+                                    <p>Board of Secondary Education, A.P</p>
+                                    <small>2016 | CGPA: 9.8/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-view" id="skills">
+                        <div class="folder-header">
+                            <h2>⚡ Skills</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item">
+                                <div class="file-icon">💻</div>
+                                <div class="file-content">
+                                    <h4>Programming Languages</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">C</span>
+                                        <span class="badge">C++</span>
+                                        <span class="badge">Python</span>
+                                        <span class="badge">Java</span>
+                                        <span class="badge">JavaScript</span>
+                                        <span class="badge">Scala</span>
+                                        <span class="badge">TypeScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🛠️</div>
+                                <div class="file-content">
+                                    <h4>Frameworks & Libraries</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">Node.js</span>
+                                        <span class="badge">React</span>
+                                        <span class="badge">AngularJS</span>
+                                        <span class="badge">Spring Boot</span>
+                                        <span class="badge">Play Framework</span>
+                                        <span class="badge">Redux</span>
+                                        <span class="badge">TensorFlow</span>
+                                        <span class="badge">Keras</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🌐</div>
+                                <div class="file-content">
+                                    <h4>Web Technologies</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">HTML</span>
+                                        <span class="badge">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🗄️</div>
+                                <div class="file-content">
+                                    <h4>Databases</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">MongoDB</span>
+                                        <span class="badge">Oracle SQL</span>
+                                        <span class="badge">PL/SQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">☁️</div>
+                                <div class="file-content">
+                                    <h4>Cloud & Tools</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">AWS</span>
+                                        <span class="badge">Git</span>
+                                        <span class="badge">GitHub</span>
+                                        <span class="badge">Google Guice</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">🤖</div>
+                                <div class="file-content">
+                                    <h4>AI/ML & Concepts</h4>
+                                    <div class="skill-badges">
+                                        <span class="badge">Machine Learning</span>
+                                        <span class="badge">Deep Learning</span>
+                                        <span class="badge">OOPs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-view" id="courses">
+                        <div class="folder-header">
+                            <h2>📚 Courses</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item">
+                                <div class="file-icon">🎓</div>
+                                <div class="file-content">
+                                    <h4>NPTEL</h4>
+                                    <ul>
+                                        <li>Cryptography and Network Security</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">📊</div>
+                                <div class="file-content">
+                                    <h4>Coursera</h4>
+                                    <ul>
+                                        <li>Introduction to Machine Learning</li>
+                                    </ul>
+                                    <p><strong>Deep Learning Specialization:</strong></p>
+                                    <ul>
+                                        <li>Neural Networks and Deep Learning</li>
+                                        <li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+                                        <li>Structuring Machine Learning Projects</li>
+                                        <li>Convolutional Neural Networks</li>
+                                        <li>Sequence Models</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">⚡</div>
+                                <div class="file-content">
+                                    <h4>Udemy</h4>
+                                    <ul>
+                                        <li>Scala and Functional Programming</li>
+                                        <li>Advanced Scala and Functional Programming</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="file-item">
+                                <div class="file-icon">💻</div>
+                                <div class="file-content">
+                                    <h4>Core Subjects (B.Tech)</h4>
+                                    <ul>
+                                        <li>DBMS</li>
+                                        <li>Operating Systems</li>
+                                        <li>Computer Networks</li>
+                                        <li>Computer Organization and Architecture</li>
+                                    </ul>
+                                    <small>IIT Bhubaneswar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-view" id="experience">
+                        <div class="folder-header">
+                            <h2>💼 Experience</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item large">
+                                <div class="file-icon">🚚</div>
+                                <div class="file-content">
+                                    <h4>Software Development Engineer II</h4>
+                                    <p>Amazon | August 2022 - Present</p>
+                                    <p><strong>Software Development Engineer II:</strong> December 2024 - Present</p>
+                                    <p><strong>Software Development Engineer I:</strong> August 2022 - November 2024</p>
+                                    <p><em>Tools: AWS, Spring Boot, Google Guice, Java, Angular</em></p>
+                                    
+                                    <h5>Notification Handler Migration</h5>
+                                    <ul>
+                                        <li>I worked in Amazon Freight team, which manages tracking of all Freight Orders during the execution lifecycle</li>
+                                        <li>As part of the north star architecture, we are replacing the independent Full TruckLoad and Less Than TruckLoad services with a unified service</li>
+                                        <li>Led the project to migrate execution tracking business logic and 20+ notification senders (Email/EDI) onto this new unified service</li>
+                                        <li>Created a phased migration plan (HLD) and 3 low-level designs to migrate 5 email notifications, including OrderDelivered, OrderPlanned etc.</li>
+                                        <li>Mentored 2-month interns, SDE-I and 2 SDE-IIs to deliver project</li>
+                                    </ul>
+
+                                    <h5>Marketplace Awareness</h5>
+                                    <ul>
+                                        <li>Introduced marketplace awareness in internal order management portal to support new country launches with minimal configurations to website</li>
+                                        <li>Contributed to LLD to revamp Role Based Authorisation mechanism</li>
+                                        <li>Implemented AuthZ by handling multiple authZ scenarios including data filtering for UI, cross region data access restriction, caching etc</li>
+                                        <li>Devised a strategy to roll out AuthZ for internal portal that has a traffic of ~5cr requests per month with help of AWS Evidently</li>
+                                    </ul>
+
+                                    <h5>Optimisation Modulator</h5>
+                                    <ul>
+                                        <li>Carrier demand (incl. origin) is captured by entities called Blocks</li>
+                                        <li>Block prices for Carriers are derived from ML/Heuristic based models</li>
+                                        <li>Integrated Block Pricing API with Optimisation Modulator that regulates price to enhance responsiveness of the model prices to current trends</li>
+                                        <li>Worked on LLD for Optimisation Modulator to capture class diagrams for Pricing Service to accommodate Price Modulator in Block Pricing API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="file-item large">
+                                <div class="file-icon">🏥</div>
+                                <div class="file-content">
+                                    <h4>Software Engineering Intern</h4>
+                                    <p>Optum (UHG) | May 2021 - July 2021</p>
+                                    <ul>
+                                        <li>Created Reactjs components using Typescript, Material-ui and automated documentation generation with React Styleguidist</li>
+                                        <li>Designed Rest API using Play Framework (in Scala) and MongoDB database</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folder-view" id="projects">
+                        <div class="folder-header">
+                            <h2>🚀 Projects</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item large">
+                                <div class="file-icon">🏫</div>
+                                <div class="file-content">
+                                    <h4>University Management System</h4>
+                                    <p>Comprehensive DBMS project to orchestrate academic activities including student registration, attendance recording, and grades submission</p>
+                                    <div class="skill-badges">
+                                        <span class="badge">Spring Boot</span>
+                                        <span class="badge">SQL</span>
+                                        <span class="badge">PL/SQL</span>
+                                        <span class="badge">Oracle Database</span>
+                                        <span class="badge">HTML</span>
+                                        <span class="badge">CSS</span>
+                                        <span class="badge">JavaScript</span>
+                                        <span class="badge">Bootstrap</span>
+                                        <span class="badge">Chart.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder-view" id="blogs">
+                        <div class="folder-header">
+                            <h2>📝 Blogs</h2>
+                        </div>
+                        <div class="file-grid">
+                            <div class="file-item">
+                                <div class="file-icon">🚧</div>
+                                <div class="file-content">
+                                    <h4>Work in Progress</h4>
+                                    <p>Blog section is currently under development. Stay tuned for technical articles and insights!</p>
+                                    <div class="blog-meta">
+                                        <span class="category">Coming Soon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/macos-script.js"></script>
+</body>
+</html>
